@@ -1,0 +1,334 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.education-entry, .work-entry, .project-entry {
+  padding-left: 1%;
+  padding-right: 1%;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -mozilla-border-radius: 6px;
+  margin: 2%;
+}
+
+h1 {
+  font-size: 40px;
+  color: #3d84b3;
+  line-height: 48px;
+  display: inline;
+  text-shadow: 2px 2px 2px #adb4b6;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #1a1a1b;
+  line-height: 29px;
+  padding: 10px;
+  text-shadow: 2px 2px 2px #cbc;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #000000;
+  line-height: 22px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4;
+  line-height: 17px;
+}
+
+h2, h3, h4, h5 {
+  padding: 10px 5% 10px 5%;
+}
+
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+}
+
+/*Utility classes*/
+.fright {
+  float: right;
+}
+
+.fleft {
+  float: left;
+}
+
+/*back to top links*/
+.secondary-link {
+  font-size: 11px;
+  padding: 1% 1% 1% 0;
+}
+
+/*Primary Navigation*/
+.toggle-nav {
+    display: none;
+}
+
+nav {
+  margin-bottom: 2%;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #626263;
+  /*so that the fixed nav doesn't overlap the other elements when the user scrolls */
+  z-index: 2000;
+}
+
+.nav-list {
+  text-align: center;
+}
+
+.nav-list li {
+    display: inline;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    padding: 1% 1% 0% 1%;
+    font-size: 24px;
+}
+
+.nav-links {
+  color: #f29c5d;
+  display: inline-block;
+}
+
+p {
+  font-size: 14px;
+  color: #333333;
+  line-height: 21px;
+}
+
+a {
+  color: #60a0ce;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+a:hover {
+  color: #309be8;
+}
+
+.welcome-message {
+  font: 18px/28px "Verdana";
+  font-style: italic;
+  color: #b00;
+  opacity: 0.2;
+}
+
+#skills {
+  flex-direction: row;
+  position: relative;
+  border-top: 1px solid #d4d4d4;
+  box-shadow: 2px 2px 2px;
+  -webkit-box-shadow: 2px 2px 2px;
+  -mozilla-box-shadow: 2px 2px 2px;
+}
+
+.flex-item {
+  padding: 1%;
+  margin: 0 10px 0 0;
+  font-size: 15px;
+  color: #0e0b09;
+}
+
+#skillsH3 {
+  color: #86b9c5;
+  display: block;
+  font-size: 16px;
+}
+
+.orange {
+  background-color: #94bfdc;
+  color: #fff;
+  font-size: 16px;
+}
+
+.orange-text {
+  color: #0f0d0a;
+}
+
+.gray {
+  background-color: rgba(227, 232, 234, 0.37);
+  padding-bottom: 10px;
+  clear: both;
+}
+
+.dark-gray {
+  background-color: #4a4a4a;
+}
+
+.headerrole {
+  padding: 0 0 0 10px;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  opacity: 0.5;
+  background-color: #94bfdc;
+}
+
+.definitionterm {
+  font-weight: bold;
+  margin: 10px 10px 10px 0;
+}
+
+.definition {
+  padding-left: 10px;
+}
+
+.center-content {
+  padding: 2.5% 5% 2.5% 5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.biopic {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  display: none;
+}
+
+img {
+  padding: 10px;
+}
+
+#letsConnect {
+  text-align: center;
+}
+
+#footerContacts {
+  background-color: #f8bf96;
+}
+
+@media only screen and (max-width: 1024px) {
+  #letsConnect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #letsConnect {
+    margin-top: 10%;
+  }
+
+  .biopic {
+    width: 150px;
+  }
+
+  .welcome-message {
+    display: none;
+  }
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5% 0 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+  #skillsH3,
+  .biopic {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .flex-box {
+    flex-direction: column;
+  }
+
+  .flex-item {
+    font-size: 12px;
+  }
+
+  .nav {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* this is activated using Jquery when the trigger link is clicked */
+  .active {
+    display: none;
+  }
+
+  /*display responsive ul dropdown menu relative to the .nav(the nav that houses the entire menu)*/
+  .nav-list {
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    border: 1px solid #e1eaf2;
+    background-color: #fff;
+    width: 13em;
+  }
+
+  /*display the list items within the menu to be block items */
+  .nav-list li {
+    display: block;
+    font-size: 14px;
+    padding: 5%;
+    margin: 10%;
+    border-bottom: 1px solid #efefef;
+  }
+
+  /*display the anchor links within each li element in the menu to be block so that the whole a element can be clicked*/
+  nav a {
+    display: block;
+  }
+
+  .toggle-nav {
+    display: inline-block;
+    color: rgb(12, 12, 12);
+    background-color: #626263;
+    padding: 1em;
+    border: 1px solid #b4b5af;
+  }
+
+  .fixed-header {
+    background-color: transparent;
+  }
+}
