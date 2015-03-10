@@ -27,7 +27,7 @@ var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text text-muted">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
-var HTMLprojectStart = '<div class="project-entry col-md-3"></div>';
+var HTMLprojectStart = '<div class="project-entry col-md-5"></div>';
 var HTMLprojectTitle = '<a href="#" class="lead">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
