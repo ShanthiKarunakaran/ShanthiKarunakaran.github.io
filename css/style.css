@@ -143,10 +143,6 @@ a:hover {
 #skills {
   flex-direction: row;
   position: relative;
-  border-top: 1px solid #d4d4d4;
-  box-shadow: 2px 2px 2px;
-  -webkit-box-shadow: 2px 2px 2px;
-  -mozilla-box-shadow: 2px 2px 2px;
 }
 
 .flex-item {
