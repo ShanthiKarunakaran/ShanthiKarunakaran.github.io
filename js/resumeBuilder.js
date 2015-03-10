@@ -2,35 +2,35 @@
 var work = {
 	"jobs" : [
 		{
-			"employer": "QYZ",
-			"title": "UI Developer",
+			"employer": "Q Point Technology, Inc.",
+			"title": "Front End Developer",
 			"location": "401 Castro Street,Mountain View, CA, US",
-			"dates": "09-05-2010 to present",
+			"dates": "March 2010 to present",
 			"description": "Develop and maintain the User Interface of the Web application"
 		},
 		{
-			"employer": "BYZ",
+			"employer": "Buongiorno",
 			"title": "Web Programmer",
 			"location": "Los Gatos, CA, US",
-			"dates": "September 2005 to 2010",
+			"dates": "September 2008 - April 2009",
 			"description": "Key member of the team , responsible in building client facing website"
 		},
 		{
-			"employer": "OBC",
+			"employer": "ooma",
 			"title": "UI Developer",
-			"location": "San Francisco, US",
-			"dates": "2008 to 2010",
-			"description": "Key member developing and maintaining the HTML/CSS , Javascript for the company website."
+			"location": "Palo Alto, US",
+			"dates": "September 2007 - August 2008",
+			"description": "Developed the web application functionality that was used for creating, activating and managing user accounts at http://www.ooma.com."
 		},
 		{
-			"employer": "DXCB",
-			"title": "Web Programmer",
-			"location": "Chennai,India",
-			"dates": "September 1995 to 2000",
-			"description": "Created user interface using XHTML,CSS"
+			"employer": "SolutionSet",
+			"title": "HTML,CSS developer",
+			"location": "Palo Alto,CA,US",
+			"dates": "January 2007 - September 2007",
+			"description": "Responsible for developing Standards compliant sites for multiple clients(Autodesk,3VR,scilearn,ooma)."
 		}
 	],
-	display: function() {
+	    display: function() {
 
 		var obj = work.jobs;
 		var formattedString;
@@ -59,16 +59,16 @@ var work = {
 var projects = {
 	"projects" : [
 		{
-			"title": "Web redesign",
-			"dates": "September 2009 to 2010",
-			"description": "changed the entire web interface.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-			"images" : ["http://placehold.it/120/ccc/fff.png" , "http://placehold.it/120/ccc/000.png"]
+			"title": "Web app. redesign using SASS",
+			"dates": "Jan. 2014 to present",
+			"description": "Revamped the entire web interface. Used SASS to organize the CSS.",
+			"images" : ["images/listpage.png" , "images/requestpage.png"]
 		},
 		{
 			"title": "Dashboard interface",
 			"dates": "09-09-2011 to 2012",
-			"description": "changed the dashboard interface.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-			"images" : ["http://placehold.it/120/ccc/d4d4.png" , "http://placehold.it/120/ccc/f00.png"]
+			"description": "Redesigned the dashboard interface.",
+			"images" : ["images/dashboard.png"]
 		}
 	],
 	display: function() {
@@ -104,14 +104,14 @@ var projects = {
 
 //bio object
 var bio = {
-	"name": "Shan Kar",
+	"name": "Shanthi Karunakaran",
 	"role": "Front End web Developer",
 	"welcomeMessage" : "Thanks for checking out my resume",
 	"contacts": {
-		"mobileNumber": "408-999-9999",
-		"emailAddress": "sk@gmail.com",
-		"gitHubUserName": "skar",
-		"twitterHandle": "@skar",
+		"mobileNumber": "408-204-1773",
+		"emailAddress": "shanthi.arun@gmail.com",
+		"gitHubUserName": "shanthikarunakaran",
+		"twitterHandle": "shandolly",
 		"location": "San Jose,CA,95124,US"
 	},
 	"skills": ["HTML", "CSS", "SASS", "Javascript", "Responsive Web Design"],
@@ -174,8 +174,8 @@ var education = {
 		{
 			"schoolname" : "NIIT",
 			"location": "Coimbatore",
-			"schoolDegree" : "Computer Science",
-			"schoolMajors" : ["CS","Engineering"],
+			"schoolDegree" : "Programming fundamentals",
+			"schoolMajors" : ["Diploma"],
 			"schoolgradYear": "1996",
 			"url" : "http://www.niit.com/en/learning-outsourcing"
 		}
