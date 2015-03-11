@@ -273,7 +273,18 @@ img {
   }
 }
 
+@media only screen and (max-width: 80em) {
+  .flex-box {
+    flex-direction: column;
+  }
+}
+
+
 @media only screen and (max-width: 840px) {
+  h1 {
+    font-size: 20px;
+  }
+
   .flex-box {
     flex-direction: column;
   }
