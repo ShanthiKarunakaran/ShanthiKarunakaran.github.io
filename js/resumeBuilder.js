@@ -114,7 +114,7 @@ var bio = {
 		"twitterHandle": "shandolly",
 		"location": "San Jose,CA,95124,US"
 	},
-	"skills": ["HTML", "CSS", "SASS", "Javascript", "Responsive Web Design"],
+	"skills": ["HTML", "CSS", "SASS", "Javascript", "RWD"],
 	"bioPic": "images/peace_dove.jpg",
 	display: function() {
 		var obj = bio;
