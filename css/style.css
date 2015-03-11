@@ -278,6 +278,10 @@ img {
     flex-direction: column;
     display: block;
   }
+
+  .flex-item {
+    display: block;
+  }
 }
 
 
