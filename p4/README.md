@@ -1,9 +1,8 @@
 ## Website Performance Optimization portfolio project
 
 
-Page lauch for Part1:
+Page launch
   - http://shanthikarunakaran.github.io/p4/
-- For Part 2 and Part 3 :
   - http://shanthikarunakaran.github.io/p4/src/views/pizza.html
 
 Part 1: Optimize PageSpeed Insights score for index.html
