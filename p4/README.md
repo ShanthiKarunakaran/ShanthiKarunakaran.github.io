@@ -5,8 +5,9 @@ Page launch
   - http://shanthikarunakaran.github.io/p4/
   - http://shanthikarunakaran.github.io/p4/src/views/pizza.html
 
-Part 1: Optimize PageSpeed Insights score for index.html
-Optimized the Critical Rendering Path. Improved the PageSpeed insight score of 90 for both Desktop and Mobile.
+Part 1:
+- Optimize PageSpeed Insights score for index.html
+- Optimized the Critical Rendering Path. Improved the PageSpeed insight score of 90 for both Desktop and Mobile.
 
 Steps taken to check the local pages on Pagespeed Insights:
 1) Used a local server by running this command from the terminal  $> python -m SimpleHTTPServer 8080
