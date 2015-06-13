@@ -189,7 +189,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   opacity: 0.5;
-  background-color: #94bfdc;
+  border-bottom: 1px solid #ecf3f7;
 }
 
 .definitionterm {
