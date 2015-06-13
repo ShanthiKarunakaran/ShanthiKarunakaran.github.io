@@ -13,15 +13,15 @@ Steps taken to check the local pages on Pagespeed Insights:
 3) Copied the public URL ngrok gives you and ran it through PageSpeed Insights
 
 Below are the optimizations i performed to achieve the PageSpeed insight score of 90 for both Desktop and Mobile.
-1) Inlined only the critical CSS in index.html to avoid any blocking CSS requests needed for the initial render of the page. The less important (minfied)styles are loaded from the external file just before the close of the body tag. Script calls were made asynchronous to defer loading and avoid it from being render blocking.
-2) For the Build automation , Gulp was used. Minified JS, CSS and performed Image Optimisations.
+- Inlined only the critical CSS in index.html to avoid any blocking CSS requests needed for the initial render of the page. The less important (minfied)styles are loaded from the external file just before the close of the body tag. Script calls were made asynchronous to defer loading and avoid it from being render blocking.
+- For the Build automation , Gulp was used. Minified JS, CSS and performed Image Optimisations.
    Installed all these plugins to perform the tasks and these build tasks were added to the gulp.js file:
    - gulp-uglify to minify JS
    - gulp-image-optimization to optimise the images
    - gulp-minify-css to minify the CSS
    - gulp-minify-html to minify the HTML
-3) Inlined only the needed Google WebFonts in index.html to avoid an extra network request when you embed the external hot link to Google fonts.
-4) Images were resized automatically using the gulp tool that led to saving a lot of KBs, helping in faster rendering of the pages.
+- Inlined only the needed Google WebFonts in index.html to avoid an extra network request when you embed the external hot link to Google fonts.
+- Images were resized automatically using the gulp tool that led to saving a lot of KBs, helping in faster rendering of the pages.
     - profilepic.jpg (saved 9.6 kB)
     - mobilewebdev.jpg (saved 26.9 kB)
     - cam_be_like.jpg (saved 34.7 kB)
