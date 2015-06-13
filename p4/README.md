@@ -3,7 +3,7 @@
 
 Page lauch for Part1:
   - http://shanthikarunakaran.github.io/p4/
-For Part 2 and Part 3 :
+- For Part 2 and Part 3 :
   - http://shanthikarunakaran.github.io/p4/src/views/pizza.html
 
 Part 1: Optimize PageSpeed Insights score for index.html
