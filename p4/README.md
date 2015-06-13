@@ -1,8 +1,10 @@
 ## Website Performance Optimization portfolio project
 
 Page launch:
-The pages can be launched from :
-
+For Part1:
+  - http://shanthikarunakaran.github.io/p4/
+For Part 2 and Part 3 :
+  - http://shanthikarunakaran.github.io/p4/src/views/pizza.html
 
 Part 1: Optimize PageSpeed Insights score for index.html
 Optimized the Critical Rendering Path. Improved the PageSpeed insight score of 90 for both Desktop and Mobile.
@@ -21,17 +23,18 @@ Below are the optimizations i performed to achieve the PageSpeed insight score o
    - gulp-minify-css to minify the CSS
    - gulp-minify-html to minify the HTML
 - Inlined only the needed Google WebFonts in index.html to avoid an extra network request when you embed the external hot link to Google fonts.
-- Images were resized automatically using the gulp tool that led to saving a lot of KBs, helping in faster rendering of the pages.
+- Minified png,jpeg and gif image files using the gulp tool that led to saving KBs as below:
     - profilepic.jpg (saved 9.6 kB)
     - mobilewebdev.jpg (saved 26.9 kB)
     - cam_be_like.jpg (saved 34.7 kB)
     - pizzeria.jpg (saved 365.2 kB)
     - pizza.png (saved 420 B)
     - 2048.png (saved 27.4 kB)
+- Resized pizzeria.jpg that was a huge jpg file by 90% that increased the Pagespeed score.
 
 Part 2: Optimize Frames per Second in pizza.html
-Used Chrome developer tools to analyze the timeline to track the Frames per second(FPS) when the page is scrolled.
-Used emulators to test that the FPS is 60Fps. in mobile devices as well.
+  - Used Chrome developer tools to analyze the timeline to track the Frames per second(FPS) when the page is scrolled.
+  - Used emulators to test that the FPS is 60Fps. in mobile devices as well.
 
 Below are the optimizations i performed to the 60FPS in pizza.html
 - In main.js reduced the scripting time by not using querySelectorAll() and instead using documents.getElementsByClassName(). The former is the slowest method to aceess DOM elements
@@ -41,7 +44,8 @@ Below are the optimizations i performed to the 60FPS in pizza.html
 - When the page is loaded , optimised the calculation of the number of pizzas that need to be rendered at a given point of time and now it animates only those that are visible in the viewport.
 
 Part 3:
-
+When the slider is resized, time taken has been optimized to be well under 5ms.
+  - Variable values that need not be calculated inside the loop was optimized to be cached outside the loop
 
 Project File organisation:
 For Part 1:
@@ -52,4 +56,5 @@ For Part 1:
   - The original images(uncompressed version) reside under the src/img folder from the root.(src/img)
 For Part 2, Part 3:
   - All files are under the src directory from the root folder. (src/views/pizza.html and src/views/js/main.js)
+  - Compressed image files(build version) (pizzeria.jpg) reside under the views/images folder)
 
