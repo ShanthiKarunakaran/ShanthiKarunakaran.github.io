@@ -1,21 +1,20 @@
 var gulp = require('gulp'),
-	uglify = require('gulp-uglify'),
-	minifyCSS = require('gulp-minify-css'),
-	imageop = require('gulp-image-optimization'),
-    imageResize = require('gulp-image-resize'),
-	minifyHTML = require('gulp-minify-html');
+    uglify = require('gulp-uglify'),
+    minifyCSS = require('gulp-minify-css'),
+    imageop = require('gulp-image-optimization'),
+    minifyHTML = require('gulp-minify-html');
 
 gulp.task('scripts', function(){
-	gulp.src('src/js/*.js')
-		.pipe(uglify())
-		//.pipe(rename('perfmatters.min.js'))
-		.pipe(gulp.dest('js/'));
+    gulp.src('src/js/*.js')
+        .pipe(uglify())
+        //.pipe(rename('perfmatters.min.js'))
+        .pipe(gulp.dest('js/'));
 });
 
 gulp.task('styles', function(){
-	gulp.src('src/css/**/*.css')
-		.pipe(minifyCSS())
-		.pipe(gulp.dest('minCSS'));
+    gulp.src('src/css/**/*.css')
+        .pipe(minifyCSS())
+        .pipe(gulp.dest('minCSS'));
 });
 
 gulp.task('images', function(cb) {
@@ -34,17 +33,6 @@ gulp.task('imagesviews', function(cb) {
     })).pipe(gulp.dest('views/images/')).on('end', cb).on('error', cb);
 });
 
-gulp.task('imageresize', function () {
-  gulp.src('src/views/images/pizzeria.jpg')
-    .pipe(imageResize({
-      width : 100,
-      height : 100,
-      crop : true,
-      upscale : false
-    }))
-    .pipe(gulp.dest('views/images/'));
-});
-
 gulp.task('minify-html', function() {
   var opts = {
     conditionals: true,
@@ -58,10 +46,10 @@ gulp.task('minify-html', function() {
 
 
 gulp.task('watch', function(){
-	gulp.watch('src/js/*.js', ['scripts']);
-	gulp.watch('src/css/**/*.css', ['styles']);
+    gulp.watch('src/js/*.js', ['scripts']);
+    gulp.watch('src/css/**/*.css', ['styles']);
 });
 
 gulp.task('default', function() {
-	gulp.start('scripts', 'styles', 'images', 'minify-html', 'imagesviews', 'imageresize', 'watch');
+    gulp.start('scripts', 'styles', 'images', 'minify-html', 'imagesviews', 'watch');
 });
