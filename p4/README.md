@@ -1,11 +1,15 @@
 ## Website Performance Optimization portfolio project
 
+Page launch instructions: Part 1
+  - Clone this repo to your local desktop - https://github.com/ShanthiKarunakaran/Udacity-P4
+  - Run this command from the terminal  $> python -m SimpleHTTPServer 8080
+  - Run this command from the terminal  ngrok 8080 which gives you the public URL
+  - Copy the public URL that ngrok gives you and run it through PageSpeed Insights
+Page launch instructions: Part 2 and Part 3
+  - Click on "Cam's pizzeria link" on index.html that points to pizza.html
 
-Page launch
-  - http://shanthikarunakaran.github.io/p4/
-  - http://shanthikarunakaran.github.io/p4/src/views/pizza.html
 
-Part 1:
+Part 1 Optimisations done:
 - Optimize PageSpeed Insights score for index.html
 - Optimized the Critical Rendering Path. Improved the PageSpeed insight score of 90 for both Desktop and Mobile.
 
