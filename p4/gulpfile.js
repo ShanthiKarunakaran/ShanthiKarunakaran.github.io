@@ -2,6 +2,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	minifyCSS = require('gulp-minify-css'),
 	imageop = require('gulp-image-optimization'),
+    imageResize = require('gulp-image-resize'),
 	minifyHTML = require('gulp-minify-html');
 
 gulp.task('scripts', function(){
@@ -33,6 +34,17 @@ gulp.task('imagesviews', function(cb) {
     })).pipe(gulp.dest('views/images/')).on('end', cb).on('error', cb);
 });
 
+gulp.task('imageresize', function () {
+  gulp.src('src/views/images/pizzeria.jpg')
+    .pipe(imageResize({
+      width : 100,
+      height : 100,
+      crop : true,
+      upscale : false
+    }))
+    .pipe(gulp.dest('views/images/'));
+});
+
 gulp.task('minify-html', function() {
   var opts = {
     conditionals: true,
@@ -51,5 +63,5 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', function() {
-	gulp.start('scripts', 'styles', 'images', 'minify-html', 'imagesviews', 'watch');
+	gulp.start('scripts', 'styles', 'images', 'minify-html', 'imagesviews', 'imageresize', 'watch');
 });
