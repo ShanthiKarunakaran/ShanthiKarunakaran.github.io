@@ -1,0 +1,210 @@
+P3 - Study notes
+
+This project is built on Google app engine
+Use JS and HTML5 canvas to create the classic arcade game
+Game characters and backdrops provided by the project
+
+OOJS course notes :
+
+Execution content :
+	An execution context isn't an object. It's the set of variables and values that are available to our program at a particular point in execution.
+	Like key value pairs in the memory
+	Fundamentally you cannot have a reference to this
+	cannot be stored anywhere or in an array.
+
+	Lexical code :
+	Char's of code that you find in a program anywhere. Its not a variable or a value that you can store anywhere or as an array element.
+
+Each time a function is invoked, a new context is created
+A function object is created in memory
+Input paramaters to a function only have bindings when that function is actually running
+
+var fn = function(one,two) {
+	console.log(this,one,two);
+};
+
+var r ={} , g ={} , b={};
+
+fn(g,b);
+
+keyword this:
+In JS, the keyword this behaves like a parameter in most of the important ways
+
+Most common use of the this keyword is as a :
+Parameter of a method invocation.
+	Now Call this function  fn,as a method. to do this
+	Add that function as a porperty of that object
+	r.method = fn;
+	In this case, make fn a property of the red object (r).
+	Now when i call the function i can do it immeditely after a dot access on that object,
+	r.method(g,b);
+	So now the this in the console.log will log the value of the "r" variable.
+
+	O/p will be "
+	Object {method: function}method: function (one,two) {arguments: nullcaller: nulllength: 2name: ""prototype: fn__proto__: function Empty() {}<function scope>__proto__: Object Object {} Object {}"
+
+	A third parameter is now given on the right side of the dot access )or bracket for prop lookup
+	the value on the left of the dot will automatically be given the value of "this" inside of the function invocation
+
+	Using call method :
+	You can bypass the dot notation as above and you can pass it a paramater that will you choose what the this has to be bound to.
+	when you use both call and method calls, the .call overirdes the method rule
+
+	So the keyword this makes it possible for us to build just one Function Object and use that as a method on a bunch of other objects
+	and every time we call the method it will have access to whatever object is being called on.
+	This is really useful for conservving memory and its only possible because we have access to the parameter this
+
+
+
+/*Start of the Prototype method
+//Game object (takes care of the game start/stop/restart)
+var Game = function() {
+    //gameEnded state variable = true(game object is instantiated with the true value for this variable)
+    //this.gameEnded = gameEnded;
+}
+
+Game.prototype.gameStart = function() {
+    score = 0;
+    // Place all enemy objects in an array called allEnemies
+    allEnemies.push(enemy1);
+    allEnemies.push(enemy2);
+    allEnemies.push(enemy3);
+    allEnemies.push(enemy4);
+    this.startTimer(10,"status");
+}
+
+Game.prototype.gameEnd = function() {
+     //Emtpy the Array to stop the bugs from moving since game is over
+    allEnemies = [];
+    //bring the player back to the original position
+    player.reset();
+
+    var btnElem = document.getElementById("startBtn");
+    btnElem.innerHTML = "Restart the game";
+    btnElem.disabled = false;
+
+    btnElem.onclick = function() {
+        this.gameStart();
+    }
+}
+
+Game.prototype.startTimer = function(secs,elem) {
+    //run the timer once every second(1000 ms)
+    var timer = setTimeout(function(){
+        game.countdown(secs,elem);
+    },1000);
+}
+
+Game.prototype.countdown = function(secs,elem) {
+    //status element
+    var element = document.getElementById(elem);
+    var btnElem = document.getElementById("startBtn");
+
+    element.innerHTML = "You have " +secs + "seconds to reach the top";
+    secs--;
+    //time is up = game is over, pass the state variable gameEnded = true to the gameStart funtion
+    if(secs < 0) {
+        element.innerHTML = "Sorry,Game is over.";
+        this.gameEnd();
+    } else {
+        this.startTimer(secs,elem);
+    }
+}
+
+
+
+
+
+// Now instantiate your objects.
+
+// Instantiate the player object
+var player = new Player(5,410,15);
+
+//Init the starting point of the enemy objects
+var initxEnemy = -10;
+
+//Instantiate the enemy objects
+var enemy1 = new Enemy(initxEnemy,40,50);
+var enemy2 = new Enemy(initxEnemy,90,100);
+var enemy3 = new Enemy(initxEnemy,100,150);
+var enemy4 = new Enemy(initxEnemy,130,130);
+//Intialize the array
+var allEnemies = [];
+
+//Instantiate the Game object
+var game = new Game();
+End of the Prototype method */
+
+
+/*Start of the Function method
+//When the Start/Restart game button is clicked , this function is invoked
+/*function gameStart(gameEnded) {
+    if (gameEnded == false) {
+        score = 0;
+        // Place all enemy objects in an array called allEnemies
+        allEnemies.push(enemy1);
+        allEnemies.push(enemy2);
+        allEnemies.push(enemy3);
+        allEnemies.push(enemy4);
+        startTimer(10,"status");
+    } else {
+        //Emtpy the Array to stop the bugs from moving since game is over
+        allEnemies = [];
+        //bring the player back to the original position
+        player.reset();
+        var btnElem = document.getElementById("startBtn");
+        btnElem.innerHTML = "Restart the game";
+        btnElem.disabled = false;
+        btnElem.onclick = function() {
+            gameEnded = false;
+            gameStart(gameEnded);
+        }
+    }
+}
+
+function startTimer(secs,elem) {
+    //run the timer once every second(1000 ms)
+    var timer = setTimeout(function(){
+        countdown(secs,elem);
+    },1000);
+}
+
+//Function to countdown from 30 seconds . Player gets 10 seconds to get to the tile without getting hit by the bugs
+function countdown(secs, elem) {
+    //status element
+    var element = document.getElementById(elem);
+    var btnElem = document.getElementById("startBtn");
+
+    element.innerHTML = "You have " +secs + "seconds to reach the top";
+    secs--;
+    //time is up = game is over, pass the state variable gameEnded = true to the gameStart funtion
+    if(secs < 0) {
+        element.innerHTML = "Sorry,Game is over.";
+        gameEnded = true;
+        gameStart(gameEnded);
+    } else {
+        startTimer(secs,elem);
+    }
+}
+End of the Function method */
+
+Using for in cons:
+(treasurechest = object,
+necklaces = array prop. in the object)
+var list = treasurechest.necklaces;
+for(prop in list) {
+    console.log(list[p]);
+}
+
+say u add methods to the array prototype(then these methods will be avail. to all the arrays including necklaces)
+Array.prototype.removeAll = function(item) {
+
+}
+Array.prototype.countType = function(item) {
+
+}
+
+result:
+lists out the entire array and also all the methods that have been added to the array prototype
+Cos methods added to the proto. becomes "enumerable" just like the indices
+
