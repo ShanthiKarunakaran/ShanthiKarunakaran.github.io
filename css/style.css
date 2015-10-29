@@ -84,6 +84,10 @@ nav {
   margin-bottom: 2%;
 }
 
+#header {
+  background-color: #99BFC5;
+}
+
 .fixed-header {
   position: fixed;
   top: 0;
