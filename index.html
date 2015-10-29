@@ -12,23 +12,25 @@
 <body>
   <div class="container-fluid">
     <div id="main">
+      <!--responsive menu/nav with links when clicked goes to the appropriate sections-->
+          <nav class="nav" id="main-nav">
+            <ul class="nav-list active">
+              <li><a href="#workExperience" class="nav-links" title="My work">Work</a></li>
+              <li><a href="#projects" class="nav-links" title="My Projects">Featured projects</a></li>
+              <li><a href="#courseprojects" class="nav-links" title="Udacity Projects">Udacity projects</a></li>
+              <li><a href="#education" class="nav-links" title="Education">Education</a></li>
+              <li><a href="#letsConnect" class="nav-links" title="Contact Me">Contact Me</a></li>
+            </ul>
+            <a class="toggle-nav" href="#">&#9776;</a>
+          </nav>
       <div id="header" class="center-content clearfix">
+
           <ul id="topContacts" class='flex-box'></ul>
       </div>
 
       <div style='clear: both;'></div>
 
-      <!--responsive menu/nav with links when clicked goes to the appropriate sections-->
-      <nav class="nav" id="main-nav">
-        <ul class="nav-list active">
-          <li><a href="#workExperience" class="nav-links" title="My work">Work</a></li>
-          <li><a href="#projects" class="nav-links" title="My Projects">Featured projects</a></li>
-          <li><a href="#courseprojects" class="nav-links" title="Udacity Projects">Udacity projects</a></li>
-          <li><a href="#education" class="nav-links" title="Education">Education</a></li>
-          <li><a href="#letsConnect" class="nav-links" title="Contact Me">Contact Me</a></li>
-        </ul>
-        <a class="toggle-nav" href="#">&#9776;</a>
-      </nav>
+
 
       <div class="row">
         <div id="workExperience" class='gray'>
@@ -49,14 +51,18 @@
         <div id="courseprojects" class="gray">
             <span class="tab"></span>
             <h2>Udacity project links:</h2>
-            <ul>
-              <li>
-                <h5>Website Optimisation : <a href="Website Optimisation project link" title="">http://shanthikarunakaran.github.io/p4/src/views/pizza.html</a></h5>
-              </li>
-              <li>
-                <h5>Online resume : <a href="http://shanthikarunakaran.github.io/" title="Online resume">http://shanthikarunakaran.github.io/</a></h5>
-              </li>
-            </ul>
+            <dl>
+              <dt>JS Frogger Arcade game: <a href="JS Frogger Arcade game link" title="">http://shanthikarunakaran.github.io/ShanthiK-Portfolio/JS-game/index.html</a></dt>
+              <dd>This project is built on Google app engine</dd>
+              <dd>JS and HTML5 canvas was used to create the classic arcade game</dd>
+
+              <dt>Website Optimisation : <a href="Website Optimisation project link" title="">http://shanthikarunakaran.github.io/ShanthiK-Portfolio/WebsiteOptimization/src/views/pizza.html</a></dt>
+              <dd>Optimize PageSpeed Insights score for index.html</dd>
+              <dd>Optimized the Critical Rendering Path. Improved the PageSpeed insight score of 90 for both Desktop and Mobile.</dd>
+
+            </dl>
+
+
         </div>
       </div>
       <a href="#header" class="fright secondary-link">Back to top</a>
