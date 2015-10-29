@@ -9,13 +9,12 @@
 }
 
 .education-entry, .work-entry, .project-entry {
-  padding-left: 1%;
-  padding-right: 1%;
   border: 1px solid #d4d4d4;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -mozilla-border-radius: 6px;
   margin: 2%;
+  padding: 1em;
 }
 
 h1 {
@@ -116,7 +115,7 @@ nav {
 }
 
 .nav-links {
-  color: #f29c5d;
+  color: #000;
   display: inline-block;
 }
 
@@ -147,6 +146,10 @@ a:hover {
 #skills {
   flex-direction: row;
   position: relative;
+}
+
+#courseprojects {
+  padding: 0 0 0 1em;
 }
 
 .flex-item {
@@ -216,7 +219,11 @@ ul {
 .biopic {
   float: left;
   padding: 10px;
-  width: 200px;
+  width: 192px;
+  height: 192px;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
   display: none;
 }
 
