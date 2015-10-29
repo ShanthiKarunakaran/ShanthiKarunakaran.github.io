@@ -59,7 +59,7 @@ var work = {
 var projects = {
 	"projects" : [
 		{
-			"title": "Web app. redesign using SASS",
+			"title": "Redesigned the Web application using SASS",
 			"dates": "Jan. 2014 to present",
 			"description": "Revamped the entire web interface. Used SASS to organize the CSS.",
 			"images" : ["images/listpage.png" , "images/requestpage.png"]
