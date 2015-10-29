@@ -185,13 +185,19 @@ var education = {
 			"title": "Nanodegree Front End Course",
 			"school": "udacity.com",
 			"dates": "Jan 2015 to present",
-			"url": "http://www.udacity.com"
+			"url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
 		},
 		{
 			"title": "JS Ninja",
 			"school": "lynda.com",
 			"dates": "Jan 2014 to present",
 			"url": "http://www.lynda.com"
+		},
+		{
+			"title": "Front End developer certification",
+			"school": "Freecodecamp.com",
+			"dates": "Oct 2015 to present",
+			"url": "http://freecodecamp.com/shanthikarunakaran"
 		}
 	],
 	display: function() {
