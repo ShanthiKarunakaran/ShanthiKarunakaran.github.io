@@ -115,7 +115,7 @@ var bio = {
 		"location": "San Jose,CA,95124,US"
 	},
 	"skills": ["HTML", "CSS", "SASS", "Javascript", "RWD"],
-	"bioPic": "images/peace_dove.jpg",
+	"bioPic": "images/profilepic.jpg",
 	display: function() {
 		var obj = bio;
 		var length = obj.skills.length;
@@ -182,16 +182,10 @@ var education = {
 	],
 	"onlineCourses": [
 		{
-			"title": "Nanodegree Front End Course",
+			"title": "Front End Nanodegree",
 			"school": "udacity.com",
 			"dates": "Jan 2015 to present",
 			"url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
-		},
-		{
-			"title": "JS Ninja",
-			"school": "lynda.com",
-			"dates": "Jan 2014 to present",
-			"url": "http://www.lynda.com"
 		},
 		{
 			"title": "Front End developer certification",
