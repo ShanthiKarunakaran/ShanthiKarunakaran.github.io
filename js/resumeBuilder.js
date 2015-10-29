@@ -111,7 +111,7 @@ var bio = {
 		"mobileNumber": "408-204-1773",
 		"emailAddress": "shanthi.arun@gmail.com",
 		"gitHubUserName": "shanthikarunakaran",
-		"twitterHandle": "shandolly",
+		"twitterHandle": "@shandolly",
 		"location": "San Jose,CA,95124,US"
 	},
 	"skills": ["HTML", "CSS", "SASS", "Javascript", "RWD"],
