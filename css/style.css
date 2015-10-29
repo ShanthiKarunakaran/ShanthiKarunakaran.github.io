@@ -157,7 +157,7 @@ a:hover {
 }
 
 #skillsH3 {
-  color: #86b9c5;
+  color: #34464A;
   display: block;
   font-size: 16px;
 }
@@ -340,7 +340,7 @@ img {
   .toggle-nav {
     display: inline-block;
     color: rgb(12, 12, 12);
-    background-color: #626263;
+    background-color: #E85F1D;
     padding: 1em;
     border: 1px solid #b4b5af;
   }
