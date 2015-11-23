@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Generate Random Quotes</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/randomizeQuotes.js"></script>
+
+		<!-- Bootstrap core CSS -->
+	    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+			<h1>Generate Random Quotes</h1>
+			<div class="quote"></div>
+
+			<button type="button" id="generateQuote">
+				Generate quote
+			</button>
+
+
+
+			<script>
+				//Create a JSON object : holds an array called quotes
+				var quotesList = {"quotes": [
+						{
+							"quote": "Don't cry because it's over, smile because it happened.",
+							"author": "Dr. Seuss"
+						},
+						{
+							"quote": "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
+							"author": "Marilyn Monroe"
+						},
+						{
+							"quote": "Be yourself; everyone else is already taken.",
+							"author": "Oscar Wilde"
+						}
+				]};
+
+				$(document).ready(function(){
+					$.fn.randomize = function(quotesList) {
+						var quote = "",
+								author = "",
+								quoteLen = quotesList.quotes.length,
+								quoteNumber = Math.floor(Math.random() * quoteLen);
+						return {
+								quote: quotesList.quotes[quoteNumber].quote ,
+								author: quotesList.quotes[quoteNumber].author
+						}
+					};
+					(function ($) {
+					    $.extend({
+					        generateQuoteAndAuthor: function () {
+					        	var randomQuoteAndAuthor = $('.quote').randomize(quotesList);
+
+					           	$('.quote').html("<h1>" + randomQuoteAndAuthor.quote + "" + "</h1>" + "<br />" + "<h3>" + randomQuoteAndAuthor.author + "" + "</h3>");
+					        }
+					    });
+					})(jQuery);
+
+					var genQuotes = $.generateQuoteAndAuthor();
+
+					$('#generateQuote').click(function(){
+						$.generateQuoteAndAuthor();
+					});
+
+
+
+					/*(function($){
+						var quote = "",
+							author = "";
+
+						var quoteLen = quotesList.quotes.length,
+							quoteNumber = Math.floor(Math.random() * quoteLen);
+
+						//revealing module pattern
+						$.fn.generateQuote = function(quotesList) {
+							//return object with multiple values
+							return {
+								quote: quotesList.quotes[quoteNumber].quote ,
+								author: quotesList.quotes[quoteNumber].author
+							}
+							//return quotesList.quotes[Math.floor(Math.random() * quoteLen)];
+						};
+
+						//write into the innerHTML of the div
+						$('.quote').html("<h1>" + $('.quote').generateQuote(quotesList).quote + "" + "</h1>" + "<br />" + "<h3>" + $('.quote').generateQuote(quotesList).author + "" + "</h3>");
+					})(jQuery);*/
+
+				});
+			</script>
+	</body>
+
+</html>
