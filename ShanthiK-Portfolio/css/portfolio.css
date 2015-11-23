@@ -1,0 +1,129 @@
+/* -----------------
+	default styles */
+body {
+	font-family: ‘Metrophobic’, Arial, serif; font-weight: 400;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* -----------------
+	navbar */
+.navbar-default .navbar-brand {
+	color: #fff;
+}
+
+.nav{
+	background-color: #fff;
+}
+
+.navbar-default {
+	background-color: #C23B00;
+}
+
+.nav li:hover {
+	background-color: #ccc;
+}
+
+.navbar-collapse {
+	left: -100%;
+}
+
+/* -----------------
+	sections */
+
+#home {
+	background: url("/images/dark_embroidery.png") 50% 0 fixed;
+	color: #fff;
+	padding: 15em 0;
+}
+
+.biopic {
+	display: none;
+}
+
+#about {
+	background: url("/images/brickwall.png") 50% 0 fixed;
+	padding: 2em 0;
+
+}
+	#about p {
+		color: #333;
+	}
+
+#about, #portfolio, #contact {
+	height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#portfolio {
+	background: url("/images/debut_dark.png") 50% 0 fixed;
+	padding: 2em 0;
+}
+
+	#portfolio .page-header {
+		color: #fff;
+	}
+
+.img-thumbnail {
+	opacity: 0.8;
+}
+
+	.img-thumbnail:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+
+#contact {
+	background: url("/images/brickwall.png") 50% 0 fixed;
+	padding: 2em 0;
+    color: #333;
+}
+
+.expandedContent {
+	display: none;
+}
+
+/* -----------------
+	Menu toggling section */
+
+.expandContent{
+	display: inline-block;
+	padding: 0 3em 0 0;
+	background: #eff4f7 url(http://i44.tinypic.com/xqm64m.gif) 100% 100% no-repeat;
+}
+
+.open {
+    background: #eff4f7 url(http://i42.tinypic.com/xpa25l.gif) 100% 90% no-repeat;
+}
+
+/* -----------------
+	portfolio section */
+
+
+/* -----------------
+	font awesome icons
+					*/
+.fa-twitter {
+	color: #55acee;
+}
+
+/* -----------------
+	media queries
+					*/
+@media only screen and (min-width: 500px) {
+	.biopic {
+	    display: block;
+	    float: left;
+	    padding: 10px;
+	    width: 192px;
+	    height: 192px;
+	    border-radius: 99em;
+	    border: 5px solid #eee;
+	    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+	}
+}
