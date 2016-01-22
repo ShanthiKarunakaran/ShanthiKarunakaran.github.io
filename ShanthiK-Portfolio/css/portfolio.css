@@ -34,7 +34,7 @@ li {
 	sections */
 
 #home {
-	background: url("/images/dark_embroidery.png") 50% 0 fixed;
+	background: url("../images/dark_embroidery.png") 50% 0 fixed;
 	color: #fff;
 	padding: 15em 0;
 }
@@ -44,7 +44,7 @@ li {
 }
 
 #about {
-	background: url("/images/brickwall.png") 50% 0 fixed;
+	background: url("../images/brickwall.png") 50% 0 fixed;
 	padding: 2em 0;
 
 }
@@ -61,7 +61,7 @@ li {
 }
 
 #portfolio {
-	background: url("/images/debut_dark.png") 50% 0 fixed;
+	background: url("../images/debut_dark.png") 50% 0 fixed;
 	padding: 2em 0;
 }
 
@@ -79,7 +79,7 @@ li {
 	}
 
 #contact {
-	background: url("/images/brickwall.png") 50% 0 fixed;
+	background: url("../images/brickwall.png") 50% 0 fixed;
 	padding: 2em 0;
     color: #333;
 }
