@@ -34,7 +34,7 @@ li {
 	sections */
 
 #home {
-	background: url("/images/dark_embroidery.png") 50% 0 fixed;
+	background: url("../images/dark_embroidery.png") 50% 0 fixed;
 	color: #fff;
 	padding: 15em 0;
 }
@@ -44,7 +44,7 @@ li {
 }
 
 #about {
-	background: url("/images/brickwall.png") 50% 0 fixed;
+	background: url("../images/brickwall.png") 50% 0 fixed;
 	padding: 2em 0;
 
 }
@@ -61,7 +61,7 @@ li {
 }
 
 #portfolio {
-	background: url("/images/debut_dark.png") 50% 0 fixed;
+	background: url("../images/debut_dark.png") 50% 0 fixed;
 	padding: 2em 0;
 }
 
@@ -71,6 +71,8 @@ li {
 
 .img-thumbnail {
 	opacity: 0.8;
+	height: 350px;
+	padding: 1.5em;
 }
 
 	.img-thumbnail:hover {
@@ -78,8 +80,18 @@ li {
 		cursor: pointer;
 	}
 
+	.img-thumbnail img {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+.expand {
+	position: relative;
+	bottom: 0;
+	right: 0;
+}
+
 #contact {
-	background: url("/images/brickwall.png") 50% 0 fixed;
+	background: url("../images/brickwall.png") 50% 0 fixed;
 	padding: 2em 0;
     color: #333;
 }
