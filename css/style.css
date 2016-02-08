@@ -92,7 +92,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #626263;
+  background-color: #59ABC7;
   /*so that the fixed nav doesn't overlap the other elements when the user scrolls */
   z-index: 2000;
 }
@@ -126,7 +126,7 @@ p {
 }
 
 a {
-  color: #60a0ce;
+  /*color: #60a0ce;*/
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -346,7 +346,7 @@ img {
 
   .toggle-nav {
     display: inline-block;
-    color: rgb(12, 12, 12);
+    color: #000;
     background-color: #E85F1D;
     padding: 1em;
     border: 1px solid #b4b5af;
