@@ -191,7 +191,7 @@ var education = {
 			"title": "Front End developer certification",
 			"school": "Freecodecamp.com",
 			"dates": "Oct 2015 to present",
-			"url": "http://freecodecamp.com/shanthikarunakaran"
+			"url": "http://www.freecodecamp.com/shanthikarunakaran"
 		}
 	],
 	display: function() {
