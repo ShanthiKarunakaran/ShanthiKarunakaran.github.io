@@ -9,12 +9,13 @@
 }
 
 .education-entry, .work-entry, .project-entry {
+  padding-left: 1%;
+  padding-right: 1%;
   border: 1px solid #d4d4d4;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -mozilla-border-radius: 6px;
   margin: 2%;
-  padding: 1em;
 }
 
 h1 {
@@ -83,10 +84,6 @@ nav {
   margin-bottom: 2%;
 }
 
-#header {
-  background-color: #99BFC5;
-}
-
 .fixed-header {
   position: fixed;
   top: 0;
@@ -115,7 +112,7 @@ nav {
 }
 
 .nav-links {
-  color: #000;
+  color: #f29c5d;
   display: inline-block;
 }
 
@@ -146,21 +143,21 @@ a:hover {
 #skills {
   flex-direction: row;
   position: relative;
-}
-
-#courseprojects {
-  padding: 0 0 0 1em;
+  border-top: 1px solid #d4d4d4;
+  box-shadow: 2px 2px 2px;
+  -webkit-box-shadow: 2px 2px 2px;
+  -mozilla-box-shadow: 2px 2px 2px;
 }
 
 .flex-item {
   padding: 1%;
-  margin: 0 10px 0 0;
+  margin: 0 9px 0 0;
   font-size: 15px;
   color: #0e0b09;
 }
 
 #skillsH3 {
-  color: #34464A;
+  color: #86b9c5;
   display: block;
   font-size: 16px;
 }
@@ -196,7 +193,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   opacity: 0.5;
-  border-bottom: 1px solid #ecf3f7;
+  background-color: #94bfdc;
 }
 
 .definitionterm {
@@ -219,11 +216,7 @@ ul {
 .biopic {
   float: left;
   padding: 10px;
-  width: 192px;
-  height: 192px;
-  border-radius: 99em;
-  border: 5px solid #eee;
-  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  width: 200px;
   display: none;
 }
 
@@ -284,24 +277,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 80em) {
-  .flex-box {
-    flex-direction: column;
-    display: block;
-  }
-
-  .flex-item {
-    display: block;
-  }
-}
-
-
 @media only screen and (max-width: 840px) {
-  h1 {
-    font-size: 20px;
-    display: block;
-  }
-
   .flex-box {
     flex-direction: column;
   }
@@ -347,7 +323,7 @@ img {
   .toggle-nav {
     display: inline-block;
     color: rgb(12, 12, 12);
-    background-color: #E85F1D;
+    background-color: #626263;
     padding: 1em;
     border: 1px solid #b4b5af;
   }
