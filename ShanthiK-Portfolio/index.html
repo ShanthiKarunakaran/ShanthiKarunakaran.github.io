@@ -347,6 +347,15 @@
 					.toggleClass('open').next('div').slideToggle('normal');
 				return false;
 			});
+
+			//Highlight the current link in the menubar
+		      $('.nav li a').click(function (e) {
+		      	e.preventDefault();
+		        $('.nav a').css('text-decoration', 'none');
+		        $('.nav a').css('color', '#F29C5D');
+		        $(this).css('text-decoration', 'underline');
+		        $(this).css('color','#94BFDC');
+		      });
 		});
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
