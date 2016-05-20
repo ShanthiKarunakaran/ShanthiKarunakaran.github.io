@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Weather App using Javascript
+		</title>
+		<link rel="stylesheet" href="css/weatherApp.css">
+	</head>
+	<body>
+		<h3 class="title">
+		  <span class="title--main-title">Show the local weather</span>
+		  <span class="title--sub-title">
+		   <a href="https://www.freecodecamp.com/challenges/show-the-local-weather" title="freecodecamp front end project">Using Vanilla JS,HTML5,CSS3</a>
+		  </span>
+		</h3>
+		<!--
+			During the AJAX request, fade the bg(show the fade), load the img (show the modal)
+		-->
+		<ul id="data">
+		  <li>
+		    <a class="temp btn" data-temp="fahrenheit" href="#" id="temp"></a>
+		  </li>
+		  <li>
+		    <span id="desc"></span>
+		  </li>
+		  <li>
+		    <img src="" id ="img" alt="weather image">
+		  </li>
+		</ul>
+		<div id="fade"></div>
+		<div id="modal">
+			<img class="img-loader" src="images/weatherApp/359.gif" />
+		</div>
+
+		<script src="js/weatherApp.js"></script>
+	</body>
+
+
+</html>
