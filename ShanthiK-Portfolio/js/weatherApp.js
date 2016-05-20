@@ -86,17 +86,17 @@
 		var weatherId = obj.weather[0].id;
 
 		if(weatherId >=701 && weatherId <=781) {
-			document.body.style.backgroundImage = "url('/images/weatherApp/hazy.jpg')";
+			document.body.style.backgroundImage = "url('images/weatherApp/hazy.jpg')";
 		} else if(weatherId === 800) {
-			document.body.style.backgroundImage = "url('/images/weatherApp/clearsky.jpg')";
+			document.body.style.backgroundImage = "url('images/weatherApp/clearsky.jpg')";
 		} else if(weatherId >=801 && weatherId <=804) {
-			document.body.style.backgroundImage = "url('/images/weatherApp/cloudy.jpg')";
+			document.body.style.backgroundImage = "url('images/weatherApp/cloudy.jpg')";
 		}
 		else if(weatherId >=900 && weatherId <=906) {
-			document.body.style.backgroundImage = "url('/images/weatherApp/tornado.jpg')";
+			document.body.style.backgroundImage = "url('images/weatherApp/tornado.jpg')";
 		}
 		else if(weatherId >=500 && weatherId <=504) {
-			document.body.style.backgroundImage = "url('/images/weatherApp/rain.jpg')";
+			document.body.style.backgroundImage = "url('images/weatherApp/rain.jpg')";
 		}
 	},
 	openModal: function() {
