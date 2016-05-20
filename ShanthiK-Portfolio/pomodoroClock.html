@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pomodoro Clock</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/pomodoroClock.js"></script>
+
+		<!-- Bootstrap core CSS -->
+	    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="css/pomodoro.css">
+	</head>
+
+	<body class="center-block">
+		<div class="container center-block">
+			<h1>Pomodoro Clock</h1>
+			<div class="clockControl" id="break">
+				<h3>Break length</h3>
+				<button class="decrement" id="break-decrement">-</button>
+					<h3 id="break-text" class="duration"></h3>
+				<button class="increment" id="break-increment">+</button>
+			</div>
+			<div class="clockControl" id="session">
+				<h3>Session length</h3>
+				<button class="decrement" id="session-decrement">-</button>
+					<h3 id="session-text" class="duration"></h3>
+				<button class="increment" id="session-increment">+</button>
+			</div>
+
+			<div class="message">
+				<!--<button type="button" class="btn btn-circle" id="pomobtn"></button>-->
+				<div id="pomobtn">
+					<div id="load-circle"><h2>Session<h2 id="pomobtntext"></h2></h2></div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
