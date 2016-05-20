@@ -1,0 +1,42 @@
+body {
+	text-align: center;
+}
+
+button,.duration,.clockControl {
+	display: inline-block;
+}
+
+.clockControl {
+	margin: 0 2em 0 0;
+}
+
+.duration {
+	margin: 0 0.5em 0 0.5em;
+}
+
+h1{
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.sessionduration{
+	text-align: center;
+}
+
+.message {
+	margin: 5em 0 0 0;
+}
+
+#pomobtn {
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	border: 1px solid #000;
+	margin: 0 auto;
+}
+
+#load-circle {
+	width: 100%; /* in this case 20% would be the current progress */
+  	height: 100%;
+  	border-radius: 100%;
+}
