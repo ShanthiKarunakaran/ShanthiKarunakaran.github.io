@@ -1,6 +1,10 @@
 # shanthi.github.io
-Project name :
-	- Create an interactive online resume
+
+# Project Name : Online resume
+
+Created responsive online resume. This project uses JSON objects to dynamically display the resume data content within the template
+
+# Project description
 Challenge :
 	- Write clean code and use objects, JSON, functions and control flow.
 Criteria :
@@ -18,34 +22,11 @@ Additonal Interactivity (that exceeded the Project rubric):
 		- I changed the HTML layout from the given simple mockup to make it more interesting , to adhere to Bootstrap grid layout
 		- I made the resume page Responsive.
 
-		# Project Name
+## Credits
 
-TODO: Write a project description
+This project was completed as part of Udacity's Front End Nanodegree program.
 
 ## Installation
 
-TODO: Describe the installation process
+Resume is hosted on github at http://shanthikarunakaran.github.io/
 
-## Usage
-
-TODO: Write usage instructions
-
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-
-## History
-
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
-
-## License
-
-TODO: Write license
