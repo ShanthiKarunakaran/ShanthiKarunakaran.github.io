@@ -1,5 +1,3 @@
-# shanthi.github.io
-
 # Online resume
 
 Created responsive online resume. This project uses JSON objects to dynamically display the resume data content within the template
