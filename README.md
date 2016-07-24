@@ -1,5 +1,5 @@
 # shanthi.github.io
-Udacity course project :
+Project name :
 	- Create an interactive online resume
 Challenge :
 	- Write clean code and use objects, JSON, functions and control flow.
