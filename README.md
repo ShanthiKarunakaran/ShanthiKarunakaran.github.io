@@ -1,10 +1,10 @@
 # shanthi.github.io
 
-# Project Name : Online resume
+# Online resume
 
 Created responsive online resume. This project uses JSON objects to dynamically display the resume data content within the template
 
-# Project description
+# Description
 Challenge :
 	- Write clean code and use objects, JSON, functions and control flow.
 Criteria :
