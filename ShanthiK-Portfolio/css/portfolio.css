@@ -8,6 +8,16 @@ li {
 	list-style-type: none;
 }
 
+.last {
+	clear: right;
+}
+
+.divider {
+	width: 100%;
+	clear: both;
+	margin: 2% 0 2% 0;
+}
+
 /* -----------------
 	navbar */
 .navbar-default .navbar-brand {
@@ -32,6 +42,10 @@ li {
 
 /* -----------------
 	sections */
+
+.row > 	ul {
+	display: flex;
+}
 
 #home {
 	background: url("../images/dark_embroidery.png") 50% 0 fixed;
@@ -97,7 +111,7 @@ li {
 	}
 
 .img-thumbnail {
-	height: 350px;
+	height: auto;
 	padding: 1.5em;
 }
 
