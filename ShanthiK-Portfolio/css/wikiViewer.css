@@ -1,0 +1,139 @@
+* {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin : 0 auto;
+  height: 100%;
+  font: "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+  padding-top: 1em;
+  background-color: #104669;
+}
+
+/*Utility classes*/
+.hide {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+}
+
+.show {
+	display: block;
+}
+
+.search {
+	text-align: center;
+}
+
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+}
+
+
+ul li {
+	list-style: none;
+}
+
+.searchbox {
+	position: relative;
+	margin: 1em auto;
+	width: 300px;
+	height: 50px;
+	}
+
+	.icon {
+		position: absolute;
+		left: 0;
+		color: #fff;
+	}
+
+	.search_item--link {
+		margin: 1em;
+	}
+
+	.search_helptext {
+		color: #fff;
+	}
+
+.searchcontainer {
+	width: 300px;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
+}
+
+.icon {
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	cursor: pointer;
+	color: #444;
+}
+
+.sInput {
+	width: 50px;
+  	height: 50px;
+  	border-color: orange;
+  	font-size: 10pt;
+  	float: left;
+  	padding-left: 35px;
+  	-webkit-border-radius: 50px;
+  	-moz-border-radius: 50px;
+  	border-radius: 50px;
+
+  	-webkit-transition: width .55s ease;
+  	-moz-transition: width .55s ease;
+  	-ms-transition: width .55s ease;
+  	-o-transition: width .55s ease;
+  	transition: width .55s ease;
+  	cursor: pointer;
+  	position: relative;
+}
+
+	#sInput::-webkit-search-cancel-button {
+		position: relative;
+		right: 1em;
+	}
+
+.sClose {
+	 position: absolute;
+	 top: 12%;
+	 right: 10px;
+	 color: orange;
+	 font-size: 2em;
+	 cursor: pointer;
+}
+
+/*when the input box gets the active class added dynamically, then show the input box*/
+.active {
+	width: 300px;
+	padding-left: 45px;
+	outline: none;
+}
+
+#results_list {
+	padding: 1em;
+	margin: 10px;
+}
+
+	#results_list li {
+		margin: 1em;
+		border: 1px solid #222;
+		padding: 1em;
+		background-color: #333;
+		border: 5px solid transparent;
+	}
+
+	#results_list li:hover {
+		border-left: 5px solid #3b94ce;
+	}
+
+
+
+

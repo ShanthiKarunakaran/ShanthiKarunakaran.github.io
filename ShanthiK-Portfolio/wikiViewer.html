@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Wikipedia Viewer using Javascript
+		</title>
+		<link rel="stylesheet" href="css/wikiViewer.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container search-container">
+			<!--class names using BEM : search(Block),item/input(element),link/icon(modifiers)-->
+			<div class="search">
+				<a class="search_item--link" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" title="random article link">Click here for a random article</a>
+				<div class="searchbox">
+					<input class="sInput" id="sInput">
+					<span class="sClose hide" id="sClose" >&times;</span>
+				</div>
+
+				<p class="search_helptext"><span>Click above icon to search</span></p>
+			</div>
+		</div>
+		<div class="container" id="results">
+			<ul id="results_list"></ul> <!--dynamically created lists of wiki articles based on user search -->
+		</div>
+		<script src="js/wikiViewer.js"></script>
+	</body>
+
+
+</html>
+
+
+
+
+				<!--<div class="box">
+					<div class="searchcontainer">
+						<span id="search_input--label" class="icon"><i class="fa fa-search"></i></span>
+						<input type="search" class="search_input--box" id="search_input--box">
+					</div>
+				</div>-->
