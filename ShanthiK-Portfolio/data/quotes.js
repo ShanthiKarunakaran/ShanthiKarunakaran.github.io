@@ -1,4 +1,3 @@
-//JSON object(quotes) that holds an array of objects
 {
    "quotes":[
       {
