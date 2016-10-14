@@ -18,6 +18,7 @@ npm install mocha chai --save
 ```
 
 ## Mocha
+### Created a test file multShanthiKarunakaran-test.js
 ```
 var should = require( 'chai' ).should();
 var basic = require( './multShanthiKarunakaran' );
@@ -39,4 +40,9 @@ describe('basic', function() {
     basic(45678).should.equal(486804150);
   })
 })
+```
+
+## Test the script with mocha
+```
+mocha multShanthiKarunakaran-test.js
 ```
