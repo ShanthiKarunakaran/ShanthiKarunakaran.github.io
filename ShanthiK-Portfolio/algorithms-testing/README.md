@@ -1,6 +1,6 @@
 
 # Benchmarking different JS solutions for an algorithm
-# Test runner to ensure the functions return accurate results
+## Test runner using Mocha and Chai to ensure the functions return accurate results
 ## Algorithm 
 ```
 Write a JavaScript function that will find the sum of all multiples of 3 or 5 that 
