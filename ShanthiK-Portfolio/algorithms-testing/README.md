@@ -114,7 +114,7 @@ suite
 ```
 node ShanthiKarunakaran-benchmark.js
 ```
-##Test results using benchmark
+##Test results using node
 ```
 multShanthiKarunakaran x 560 ops/sec ±7.60% (38 runs sampled)
 For large number 10000 
