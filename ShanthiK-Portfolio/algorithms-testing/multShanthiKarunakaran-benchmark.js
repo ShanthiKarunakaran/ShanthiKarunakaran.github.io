@@ -8,7 +8,7 @@ suite
   .add('multShanthiKarunakaran Reduce 10000', () => {
     multShanthiKarunakaran(10000);
   })
-  .add('multShanthiKarunakaran Reduce 10000', () => {
+  .add('multShanthiKarunakaran1 Reduce 10000', () => {
     multShanthiKarunakaran1(10000);
   })
   .on('cycle', (event) => {
