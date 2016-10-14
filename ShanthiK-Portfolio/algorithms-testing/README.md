@@ -70,3 +70,17 @@ module.exports = multShanthiKarunakaran;
 ```
 mocha multShanthiKarunakaran-test.js
 ```
+
+## Test results after running with mocha
+```
+$ mocha multShanthiKarunakaran-test.js 
+
+  basic
+    ✓ should return 23 when passed 10
+    ✓ should return 78 when passed 20
+    ✓ should return 2318 when passed 100
+    ✓ should return 23331668 when passed 10000
+    ✓ should return 486804150 when passed 45678
+
+  5 passing (15ms)
+```
