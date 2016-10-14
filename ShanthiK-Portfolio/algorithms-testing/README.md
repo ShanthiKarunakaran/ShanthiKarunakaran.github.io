@@ -1,5 +1,6 @@
 
 # Benchmarking different JS solutions for an algorithm
+# Writing different tests using Mocha
 ## Algorithm 
 ```
 Write a JavaScript function that will find the sum of all multiples of 3 or 5 that 
