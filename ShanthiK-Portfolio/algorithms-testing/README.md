@@ -110,3 +110,13 @@ suite
     // run async
   .run({ 'async': true });
  ```
+##Run the test using node
+```
+node ShanthiKarunakaran-benchmark.js
+```
+##Test results using benchmark
+```
+multShanthiKarunakaran x 560 ops/sec ±7.60% (38 runs sampled)
+For large number 10000 
+multX.js:58 multX x 629 ops/sec ±9.86% (41 runs sampled)
+```
